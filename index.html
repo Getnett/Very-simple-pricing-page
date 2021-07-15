@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="nav">
+        <h3 aria-label="logo" class="logo">Grid</h3>
+        <ul aria-label="Navigaton menu" class="menu-list">
+          <li class="menu-list__item">
+            <a class="menu-link active" href="#">How it works</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-link" href="#">Who we are</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-link" href="#">What we do</a>
+          </li>
+          <li class="menu-list__item">
+            <a class="menu-link" href="#">Contact us</a>
+          </li>
+        </ul>
+        <button class="sign-btn">Sign in</button>
+      </nav>
+    </header>
+    <main>
+      <article>
+        <div class="services">
+          <!-- free service -->
+          <div class="service-item">
+            <div class="service-item__wrapper">
+              <div class="service-tag">
+                <h4>Free service</h4>
+              </div>
+              <h2 class="service-title">
+                $Free<span class="sr-tag--span">/forever</span>
+              </h2>
+              <ul class="service-list">
+                <li class="service-list__item service-list__item--free">
+                  Components-driven system
+                </li>
+                <li class="service-list__item service-list__item--free">
+                  Sales boosting landing pages
+                </li>
+                <li class="service-list__item service-list__item--free">
+                  Awesome Feather icons pack
+                </li>
+              </ul>
+              <button class="btn-service sr-btn--free">Try for free</button>
+            </div>
+          </div>
+          <!-- individual service -->
+          <div class="service-item sr-individual">
+            <div class="service-item__wrapper">
+              <div class="service-tag sr-tag--flex">
+                <img
+                  src="/public/assets/icons/individual.svg"
+                  alt="Indiviual icon"
+                />
+                <button class="btn-best">Best!</button>
+              </div>
+              <h2 class="service-title">
+                $24<span class="sr-tag--span">/month</span>
+              </h2>
+              <ul class="service-list">
+                <li class="service-list__item service-list__item--indv">
+                  Components-driven system
+                </li>
+                <li class="service-list__item service-list__item--indv">
+                  Sales boosting landing pages
+                </li>
+                <li class="service-list__item service-list__item--indv">
+                  Awesome Feather icons pack
+                </li>
+                <li class="service-list__item service-list__item--indv">
+                  Themed into 3 different styles
+                </li>
+                <li class="service-list__item service-list__item--indv">
+                  Will help to learn Figma
+                </li>
+              </ul>
+              <button class="btn-service sr-btn--indv">Regular license</button>
+            </div>
+          </div>
+          <!-- corporate service -->
+          <div class="service-item">
+            <div class="service-item__wrapper">
+              <div class="service-tag">
+                <img
+                  src="/public/assets/icons/corporate.svg"
+                  alt="Corporate icon"
+                />
+              </div>
+              <h2 class="service-title">
+                $12<span class="sr-tag--span">/Editor</span>
+              </h2>
+              <ul class="service-list">
+                <li class="service-list__item service-list__item--cor">
+                  Sales-boosting landing pages
+                </li>
+                <li class="service-list__item service-list__item--cor">
+                  Awesome Feather icons pack
+                </li>
+                <li class="service-list__item service-list__item--cor">
+                  Themed into 3 different styles
+                </li>
+              </ul>
+              <button class="btn-service sr-btn--cor">Extended license</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
