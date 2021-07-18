@@ -8,15 +8,17 @@ $dark-color: #000000;
 
 $light-color: #ffffff;
 
-@mixin outlined {
+%outlined {
   border: 1px solid #adadad;
   color: $primary-text;
   background-color: transparent;
 }
-@mixin contained {
+
+%contained {
   background-color: $primary-text;
   color: $light-color;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -167,23 +169,23 @@ main {
     cursor: pointer;
   }
   .sr-btn--free {
-    @include outlined();
+    @extend %outlined;
     &:hover {
-      @include contained();
+      @extend %contained;
     }
   }
   .sr-btn--indv {
     font-size: 24px;
     border: 0;
-    @include contained();
+    @extend %contained;
     &:hover {
-      @include outlined();
+      @extend %outlined;
     }
   }
   .sr-btn--cor {
-    @include outlined();
+    @extend %outlined;
     &:hover {
-      @include contained();
+      @extend %contained;
     }
   }
 }
